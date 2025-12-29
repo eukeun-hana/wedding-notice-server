@@ -7,9 +7,9 @@ import (
 	"os"
 
 	
-	"github.com/juhonamnam/wedding-invitation-server/env"
-	"github.com/juhonamnam/wedding-invitation-server/httphandler"
-	"github.com/juhonamnam/wedding-invitation-server/sqldb"
+	"github.com/eukeun-hana/wedding-notice-server/env"
+	"github.com/eukeun-hana/wedding-notice-server/httphandler"
+	"github.com/eukeun-hana/wedding-notice-server/sqldb"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/rs/cors"
 )
