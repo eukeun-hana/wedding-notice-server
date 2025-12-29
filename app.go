@@ -1,10 +1,11 @@
 package main
 
 import (
-
+	"database/sql"
 	"log"
 	"net/http"
 	"os"
+
 
 	"github.com/juhonamnam/wedding-invitation-server/env"
 	"github.com/juhonamnam/wedding-invitation-server/httphandler"
@@ -33,11 +34,12 @@ func main() {
 	})
 
 	handler := corHandler.Handler(mux)
+
 	port := os.Getenv("PORT")
-	
+
 	if port == "" {
 		port = "8080"
-		
+
 	}
 
 	log.Println("Server listening on port", port)
